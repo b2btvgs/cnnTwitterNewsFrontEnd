@@ -1,0 +1,260 @@
+.mdl-mini-footer--appearance {
+    /*    height: 15px;*/
+    
+    padding: 10px;
+}
+
+.mdl-page-content--appearance {
+    padding: 5px;
+}
+
+.mdl-cell-content--appearance {
+    padding: 10px;
+    height 200px;
+}
+
+.mdl-cell--appearance {
+    padding: 10px;
+    height 200px;
+}
+
+.mdl-button--submit {
+    padding: 10px;
+}
+
+.mdl-switch-label--appearance {
+    color: pink;
+}
+
+.demo-card-wide.mdl-card {
+    width: 50%;
+    background-color: aliceblue;
+    border-style: inset;
+    border-width: 1px;
+    border-color: aliceblue;
+    /*    padding: 5px 5px 5px 5px;*/
+}
+
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 26px;
+    /*background: url('http://www.getmdl.io/assets/demos/welcome_card.jpg') center / cover;*/
+}
+
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+/*fixed side drawer rules*/
+/*
+.demo-drawer {
+    border: none;
+}
+*/
+/* iOS Safari specific workaround */
+
+.demo-drawer .mdl-menu__container {
+    z-index: -1;
+}
+
+.demo-drawer .demo-navigation {
+    z-index: -2;
+}
+
+END iOS Safari specific workaround .demo-drawer .mdl-menu .mdl-menu__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.demo-drawer-header {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 16px;
+    height: 65px;
+}
+
+.demo-avatar-dropdown {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+/*gridster rules*/
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.page-header {
+    margin-top: 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+.box {
+    height: 100%;
+    background-color: #E1E3E6;
+}
+
+.box-header {
+    background-color: #98d3e3;
+    padding: 5px 30px 5px 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: move;
+    position: relative;
+}
+
+.box-header h3 {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.box-content {
+    padding: 6px;
+}
+
+.box-header-btns {
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+
+a {
+    color: #ccc;
+}
+
+form {
+    margin-bottom: 0;
+}
+
+.gridster {
+    border: 1px solid #ccc;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.ng-modal-overlay {
+    /* A dark translucent div that covers the whole screen */
+    
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.ng-modal-dialog {
+    /* A centered div above the overlay with a box shadow. */
+    
+    z-index: 10000;
+    position: absolute;
+    width: 50%;
+    /* Default */
+    /* Center the dialog */
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 4px 4px 80px #000;
+}
+
+.ng-modal-dialog-content {
+    padding: 10px;
+    text-align: left;
+}
+
+.ng-modal-close {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 120%;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'arial', 'sans-serif';
+}
+
+.node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+}
+
+.nodeFont {
+    font-size: 20px;
+}
+
+.node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+}
+
+.link:hover {
+    stroke-opacity: .3;
+}
+
+.spanFont {
+    color: #ccc;
+}
+
+.tweetsList {
+    background-color: aliceblue;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    max-height: 500px;
+    overflow: auto;
+    padding-left: 6px;
+}
+
+ul li {
+    padding: 10px;
+    border: 2px solid #a1a1a1;
+}

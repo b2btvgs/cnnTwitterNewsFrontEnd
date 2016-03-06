@@ -1,0 +1,17 @@
+<div class="box-header">
+    <h4>{{ widget.type }}</h4>
+    <div class="box-header-btns pull-right">
+
+<!--
+        <select ng-model="selectedItem" ng-init="selectedItem = sankeyData[1]" ng-options="item as item.sankeyId for item in sankeyData">
+</select>&nbsp;
+-->
+
+        <select name="sankeySelect" id="sankeySelect" ng-options="option.sankeyId for option in sankeyData track by option.sankeyId" ng-model="selectedItem"></select>&nbsp;
+
+        <a title="settings" ng-click="openSettings(widget)"><i class="fa fa-cog fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="Remove widget" ng-click="remove(widget)">
+            <i class="fa fa-trash-o fa-2x iconValuesFormat"></i>
+        </a>
+    </div>
+</div>

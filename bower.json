@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "authors": [
+    "Sapient",
+    "remodeled by Paul McCranie"
+  ],
+  "description": "Remodeled client-side version of Sapient mock solution known as 'BullsFirst'",
+  "main": "app.js",
+  "keywords": [
+    "stocks",
+    "concentration",
+    "market",
+    "position",
+    "concentration"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "ui-router": "~0.2.15",
+    "angular-animate": "~1.4.6",
+    "angular-aria": "~1.4.6",
+    "angular-gridster": "~0.13.5",
+    "angular-bootstrap": "~0.13.4",
+    "ngstorage": "~0.3.9",
+    "angular-google-chart": "~0.0.11",
+    "satellizer": "0.9.3",
+    "components-font-awesome": "~4.4.0",
+    "bootstrap-material-design-icons": "~1.0.0"
+  }
+}

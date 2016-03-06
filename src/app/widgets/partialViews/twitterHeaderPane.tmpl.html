@@ -1,0 +1,13 @@
+<div class="box-header">
+    <h4>{{ widget.type }}</h4>
+    <div class="box-header-btns pull-right">
+        <a title="refresh" ng-click="refreshTweets(widget)"><i class="fa fa-refresh fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="refresh" ng-click="getPopularTweets(widget)"><i class="fa fa-users fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="refresh" ng-click="getPositiveTweets(widget)"><i class="fa fa-smile-o fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="refresh" ng-click="getNegativeTweets(widget)"><i class="fa fa-frown-o fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="settings" ng-click="openSettings(widget)"><i class="fa fa-cog fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="Remove widget" ng-click="remove(widget)">
+            <i class="fa fa-trash-o fa-2x iconValuesFormat"></i>
+        </a>
+    </div>
+</div>

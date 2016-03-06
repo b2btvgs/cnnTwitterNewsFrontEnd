@@ -1,0 +1,231 @@
+body {
+    background-color: #000;
+    font-size: 150%;
+    /* Base font-size of 16px */
+}
+
+header.mdl-layout__header {
+    background-color: #000;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #5B126E;
+}
+
+.titleA {
+    font-size: 30px;
+    color: #7D1B96;
+    text-shadow: 1px 1px 2px black, 0 0 0.05em #505557, 0 0 0.05em #505557;
+    text-align: center;
+}
+
+.titleB {
+    font-size: 30px;
+    color: #98A0A3;
+    text-shadow: 1px 1px 2px black, 0 0 0.05em #505557, 0 0 0.05em #505557;
+    text-align: center;
+}
+/*
+#iconLarge {
+    font-size: 150%;
+}*/
+
+.mdl-button {
+    color: #fff;
+}
+
+@keyframes fontFlex {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fontFlex {
+    /* Firefox */
+    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fontFlex {
+    /* Safari and Chrome */
+    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fontFlex {
+    /* Opera */
+    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cellOne span {
+    opacity: 1;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation: fontFlex 1s;
+    -moz-animation: fontFlex 1s;
+    /* Firefox */
+    
+    -webkit-animation: fontFlex 1s;
+    /* Safari and Chrome */
+    
+    -o-animation: fontFlex 1s;
+    /* Opera */
+}
+
+.cellTwo span {
+    opacity: 1;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation: fontFlex 2s;
+    -moz-animation: fontFlex 2s;
+    /* Firefox */
+    
+    -webkit-animation: fontFlex 2s;
+    /* Safari and Chrome */
+    
+    -o-animation: fontFlex 2s;
+    /* Opera */
+}
+
+.cellThree span {
+    opacity: 1;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation: fontFlex 3s;
+    -moz-animation: fontFlex 3s;
+    /* Firefox */
+    
+    -webkit-animation: fontFlex 3s;
+    /* Safari and Chrome */
+    
+    -o-animation: fontFlex 3s;
+    /* Opera */
+}
+
+.cellFour span {
+    opacity: 1;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation: fontFlex 5s;
+    -moz-animation: fontFlex 5s;
+    /* Firefox */
+    
+    -webkit-animation: fontFlex 5s;
+    /* Safari and Chrome */
+    
+    -o-animation: fontFlex 5s;
+    /* Opera */
+}
+
+.cellFive span {
+    opacity: 1;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation: fontFlex 4s;
+    -moz-animation: fontFlex 4s;
+    /* Firefox */
+    
+    -webkit-animation: fontFlex 4s;
+    /* Safari and Chrome */
+    
+    -o-animation: fontFlex 4s;
+    /* Opera */
+}
+
+.cellSix span {
+    opacity: 1;
+    animation-delay: 6s;
+    animation-duration: 2s;
+    animation: fontFlex 6s;
+    -moz-animation: fontFlex 6s;
+    /* Firefox */
+    
+    -webkit-animation: fontFlex 6s;
+    /* Safari and Chrome */
+    
+    -o-animation: fontFlex 6s;
+    /* Opera */
+}
+
+.gridFont_1 {
+    font-size: 5em;
+    color: #131485;
+    text-shadow: 1px 1px 2px black, 0 0 0.05em #676E70, 0 0 0.05em #676E70;
+    text-align: center;
+}
+
+.gridFont_2 {
+    font-size: 5em;
+    color: #7D1B96;
+    text-shadow: 1px 1px 2px black, 0 0 0.05em #676E70, 0 0 0.05em #676E70;
+    text-align: center;
+}
+
+.gridFont_3 {
+    font-size: 5em;
+    color: #98A0A3;
+    text-shadow: 1px 1px 2px black, 0 0 0.05em #676E70, 0 0 0.05em #676E70;
+    text-align: center;
+}
+
+.rowPadding {
+    padding-top: 40px;
+}
+
+.containerPadding {
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+.top-containerPadding {
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.menuLink {
+    font-size: 2.3em;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.menuLinkDashboard {
+    font-size: 2.25em;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.menuLinkWidget {
+    font-size: 2.2em;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.mdl-navigation {
+    padding-top: 15px
+}
+
+a:hover {
+    color: #A1A2ED;
+}
+
+.iconValuesFormat {
+    color: black;
+}

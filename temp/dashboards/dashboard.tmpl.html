@@ -1,0 +1,33 @@
+<div class="page-content mdl-page-content--appearance">
+    <div class="page-header">
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+            <div class="mdl-tabs__tab-bar">
+                <div data-ng-repeat="dashboard in dashboards">
+                    <a ng-click="chooseDashboard(dashboard)" ng-show='isAuthenticated()' class="menuLinkDashboard">{{dashboard.title}}</a>
+                </div>
+                <a ng-click="createDashboard()" ng-show='isAuthenticated()' class="menuLinkDashboard">Create New</a>
+                <div class="mdl-layout-spacer"></div>
+            </div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <div class="mdl-tabs mdl-js-tabs">
+                    <a ng-click="CreateTypedWidget(1015)" ng-show='isAuthenticated()' class="menuLinkWidget">Wolf Blitzer</a>
+                    <a ng-click="CreateTypedWidget(1016)" ng-show='isAuthenticated()' class="menuLinkWidget">Anderson Cooper</a>
+                    <a ng-click="CreateTypedWidget(1018)" ng-show='isAuthenticated()' class="menuLinkWidget">Erin Burnett</a>
+                    <a ng-click="CreateTypedWidget(1017)" ng-show='isAuthenticated()' class="menuLinkWidget">Poppy Harlow</a>
+                    <a ng-click="CreateTypedWidget(1019)" ng-show='isAuthenticated()' class="menuLinkWidget">Fareed Zakaria</a>
+                    <a ng-click="CreateTypedWidget(1020)" ng-show='isAuthenticated()' class="menuLinkWidget">Michael Smerconish</a>
+                    <a ng-click="CreateTypedWidget(1021)" ng-show='isAuthenticated()' class="menuLinkWidget">Jake Tapper</a>
+                    <a ng-click="clear()" class="menuLinkWidget">Clear</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div gridster="gridConfig">
+        <!--        <ul>-->
+        <div gridster-item="widget" ng-repeat="widget in widgets | filter:{ dashboard: dashboardOfFocus.id }">
+            <widget-body></widget-body>
+        </div>
+        <!--        </ul>-->
+    </div>
+</div>
+</div>

@@ -1,0 +1,14 @@
+<h3>This is the Contact view</h3>
+
+<div class="box mdl-shadow--8dp">
+    <widget-header-panel></widget-header-panel>
+    <div class="box-content" style="background-color:black">
+        <div class="box mdl-shadow--8dp" style="height:100px; border:0px inset grey;padding:0">
+            <div ng-repeat="portfolioAccount in portfolioCtl.formattedAccounts">
+                <h4>{{portfolioAccount.name}}</h4>
+                <h4 class="mdl-cell mdl-cell--3-col">{{portfolioAccount.marketValue}}</h4>
+                <h4 class="mdl-cell mdl-cell--1-col">{{portfolioAccount.cashValue}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

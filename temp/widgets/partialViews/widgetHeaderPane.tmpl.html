@@ -1,0 +1,14 @@
+<div class="box-header">
+    <h4>{{ widget.type }}</h4>
+    <div class="box-header-btns pull-right">
+        <a title="pieChart" ng-click="switchChartType(widget, 'PieChart')"><i class="fa fa-pie-chart fa-2x iconValuesFormat"></i></a> &nbsp;
+        <a title="lineChart" ng-click="switchChartType(widget, 'LineChart')"><i class="fa fa-line-chart fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="columnChart" ng-click="switchChartType(widget, 'ColumnChart')"><i class="fa fa-bar-chart fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="barChart" ng-click="switchChartType(widget, 'BarChart')"><i class="fa fa-bar-chart fa-rotate-90 fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="table" ng-click="switchChartType(widget, 'Table')"><i class="fa fa-table fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="settings" ng-click="openSettings(widget)"><i class="fa fa-cog fa-2x iconValuesFormat"></i></a>&nbsp;
+        <a title="Remove widget" ng-click="remove(widget)">
+            <i class="fa fa-trash-o fa-2x iconValuesFormat"></i>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MeanStack Design -- CNN Edition</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+
+    <!-- vendorInject:css -->
+    <!-- endinject -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!--    <link rel="stylesheet" href="css/main.css">-->
+    <!--
+   <style>
+    .mdl-textfield {
+        display: block;
+    }
+</style>
+-->
+
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+    </script>
+    <!--
+    <script>
+    google.load('visualization', '1', {
+        packages: ['gauge']
+    });
+    google.setOnLoadCallback(function () {
+        angular.bootstrap(document, ['app']);
+    });
+</script>
+-->
+</head>
+
+<body ng-app="app" ng-controller="UserController as ul">
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title titleA">MeanStack</span> &nbsp; &nbsp;
+                <span><i class="fa fa-globe fa-3x"></i></span>&nbsp; &nbsp;
+                <span class="mdl-layout-title titleB">Design -- CNN Edition</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <div class="mdl-tabs mdl-js-tabs">
+                        <!--                        <a ui-sref="sanKey" ng-show='isAuthenticated()' class="menuLink">Sankey Chart</a>-->
+                        <a ui-sref="dashboards" ng-show='isAuthenticated()' class="menuLink">Dashboards</a>
+                        <a ui-sref="edit" ng-show='isAuthenticated()' class="menuLink">Edit</a>
+                        <a ui-sref="contact" ng-show='isAuthenticated()' class="menuLink">Contact</a>
+                        <a ui-sref="help" ng-show='isAuthenticated()' class="menuLink">Help</a>
+                        <a ng-click="login()" ng-hide='isAuthenticated()' class="menuLink">Login</a>
+                        <a ng-click="logout()" ng-show='isAuthenticated()' class="menuLink">Logout</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div ng-click="getGameOfFocus()" class="mdl-layout__drawer mdl-layout__drawer-is-visible mdl-color--blue-grey-100 mdl-color-text--blue-grey-600">
+            <header class="mdl-layout__header mdl-color--blue-grey-600">
+                <div class="mdl-layout__header-row mdl-color--blue-grey-600">
+                    <span class="mdl-layout-title">Menu</span>
+                </div>
+            </header>
+            <main class="mdl-layout__content">
+                <nav class="mdl-navigation">{{gameOfFocus.title}}
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </nav>
+            </main>
+        </div>
+        <main class="mdl-layout__content">
+            <div ui-view class="page-content mdl-page-content--appearance">
+
+            </div>
+        </main>
+        <footer class="mdl-mini-footer--appearance">
+            <div class="mdl-mini-footer--left-section">
+                <div class="mdl-logo">meanstackdesign.com</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js "></script>
+
+    <script type="text/javascript" src="https://d2f25wgezub9nf.cloudfront.net/api/sketchfab-viewer-1.0.0.js"></script>
+
+    <!-- vendorInject:js -->
+    <!-- endinject -->
+
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="app/users/userModule.js"></script>
+    <script src="app/dashboards/dashboardModule.js"></script>
+    <script src="ext-modules/sankey.js"></script>
+
+    <!-- inject:js -->
+    <!-- endinject -->
+</body>
+
+</html>
